@@ -10,11 +10,12 @@ services:
     environment:
       EULA: "TRUE"
       INIT_MEMORY: "7G"
-      #`MAGMA_CHANNEL: "dev"
+      #MAGMA_CHANNEL: "dev"
       MAX_MEMORY: "20G"
       TYPE: "MAGMA"
       VERSION: "1.12.2"
       MAX_TICK_TIME: "-1"
+      JVM_DD_OPTS: "disable.watchdog:true"
       #MODPACK: "https://media.forgecdn.net/files/3377/168/ABOE+-+Server+-+v3.9.4b.zip"
     tty: true
     stdin_open: true
